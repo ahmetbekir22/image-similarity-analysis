@@ -1,16 +1,7 @@
-# https://youtu.be/16s3Pi1InPU
-"""
-Comparing images using ORB/SIFT feature detectors
-and structural similarity index. 
-
-@author: Sreenivas Bhattiprolu
-"""
-
 
 from skimage.metrics import structural_similarity
 import cv2
 
-#Works well with images of different dimensions
 def orb_sim(img1, img2):
   # SIFT is no longer available in cv2 so using ORB
   orb = cv2.ORB_create()
@@ -40,10 +31,10 @@ def structural_sim(img1, img2):
 img00 = cv2.imread('1.jpeg', 0)
 img01 = cv2.imread('2.jpeg', 0)
 
-img1 = cv2.imread('1.jpeg', 0)  # 714 x 901 pixels
-img2 = cv2.imread('2.jpeg', 0)  # 714 x 901 pixels
-img3 = cv2.imread('3.jpeg', 0)  # 203 x 256 pixels
-#img4 = cv2.imread('images/different_img.jpg', 0)  # 203 x 256 pixels
+img1 = cv2.imread('1.jpeg', 0) 
+img2 = cv2.imread('2.jpeg', 0)  
+img3 = cv2.imread('3.jpeg', 0)  
+
 
 orb_similarity = orb_sim(img1, img3)  #1.0 means identical. Lower = not similar
 
