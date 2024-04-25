@@ -3,7 +3,7 @@ from skimage.metrics import structural_similarity
 import cv2
 
 def orb_sim(img1, img2):
-  # SIFT is no longer available in cv2 so using ORB
+
   orb = cv2.ORB_create()
 
   # detect keypoints and descriptors
