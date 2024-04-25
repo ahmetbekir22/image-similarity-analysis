@@ -1,8 +1,8 @@
 # Image Similarity Analysis
 
-This repository contains Python code for comparing images using ORB/SIFT feature detectors and the structural similarity index (SSIM).
+This  Python code compares images by  using ORB/SIFT feature detectors and the structural similarity index (SSIM).
 
-The code provided in this repository allows you to compare images using two different methods:
+The code allows you to compare images using two different methods:
 
 1. **ORB Feature Detector**: ORB (Oriented FAST and Rotated BRIEF) feature detector is used to detect keypoints and descriptors in images. The similarity between images is calculated based on the number of similar keypoints found using the ORB detector.
 
